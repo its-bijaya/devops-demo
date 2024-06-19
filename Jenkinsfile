@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def customImage = docker.build("devops-demo")
+                    def customImage = docker.build("./app/")
                 }
             }
         }
